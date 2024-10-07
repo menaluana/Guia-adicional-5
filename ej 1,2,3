@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
+public class Main {
+    public static void main(String[] args) {
+      /* EJERCICIO 1
+       int num1;
+       int num2;
+       float resultado = 0;
+
+       try {
+           Scanner scanner = new Scanner(System.in);
+           System.out.println("Ingrese un numero");
+           num1 = scanner.nextInt();
+           scanner.nextLine();
+           System.out.println("Ingrese el numero por el que quiere dividir el anterior");
+           num2 = scanner.nextInt();
+           scanner.nextLine();
+           if (num2 == 0){
+               throw new ArithmeticException("El divisor es no es valido");
+           } else {
+               resultado += num1 / num2;
+               System.out.println("EL RESULTADO ES: " + resultado);
+           }
+       } catch (ArithmeticException a){
+           System.out.println(a.getMessage());
+       }*/
+
+       /* EJERCICIO 2
+        String cadenaIngresada;
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingrese una cadena: ");
+        cadenaIngresada = scanner.nextLine();
+        System.out.println(cadenaIngresada);
+
+        try {
+            if (cadenaIngresada.matches(".*\\d.*")) { //devuelve verdadero si la cadena contiene un numero
+                throw new NumberFormatException("LA CADENA CONTIENE UN NUMERO");
+            }
+        } catch (NumberFormatException r){
+            System.out.println(r.getMessage());
+        }*/
+
+        //EJERCICIO 3
+
+        int posicion = 0;
+        int[] arr = new int[5];
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingrese una posicion: ");
+        posicion = scanner.nextInt();
+
+        try{
+            if (posicion > arr.length)
+            {
+                throw new ArrayIndexOutOfBoundsException("Posicion no valida");
+            }
+            catch (ArrayIndexOutOfBoundsException e){
+                System.out.println(e.getMessage());
+            }
+        }
+    }
+}
